@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -29,6 +32,7 @@
                         <li class="nav-member"><a href ="./contact.html" class="nav-link">Contacts</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="menu-open"><svg class="menu-open-icon" width="32" height="22"><use href="./images/sprite/hamburger.svg#hamburger"></use></svg></button>
                 <ul class="contacts">
                     <li class="contacts-member"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
                     <li class="contacts-member"><a href="tel:+11(000)111-11-11" class="contacts-link">+11 (000) 111-11-11</a></li>
@@ -44,7 +48,7 @@
             <div class="banner-content">
                 <h1 class="banner-logo">Effective Solutions<br>For Your Business</h1>
                 <button type="button" name="order_service" data-modal-open class="button">Order Service</button>
-                 <!-- modal -->
+               
                 <div class="modal-backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button data-modal-close class="modal-button"><svg width="8" height="8" class="modal-svg"><use href="./images/sprite/vector.svg#vector"></use></svg></button>
@@ -281,6 +285,7 @@
             </ul>
         </div>
     </section>
+    <!-- customer-stuff -->
     <section class="customer-section">
         <div class="container">
             <h2 class="customer-title">Customers</h2>
@@ -378,7 +383,7 @@
             </div>
         </div>
     </footer>
-   
+   <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
