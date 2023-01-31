@@ -49,18 +49,18 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
 }
 /*container*/
 .container-header{
-   width: 100%;
+    width: 100vw;
     padding-left: 16px;
     padding-right: 16px;
 }
 .container{
-    max-width: 428px;
+    width: 100vw;
     padding-right: 15px;
     padding-left: 15px;
     
 }
 .container-footer{
-    max-width: 428px;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -156,6 +156,7 @@ nav{
 }
 /* mobile-menu */
 .menu-open{
+    margin-top: 25px;
     width: 32px;
     height: 32px;
     background-color: transparent;
@@ -163,10 +164,93 @@ nav{
     padding: 0;
     margin: 0;
 }
+.mob-menu.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
 .menu-open-icon{
     stroke: #000000;
+}
+.mob-menu{
+    position: fixed;
+    top: 0; 
+    background-color: var(--standard-white-color);
+    transition: translate var(--animation-duration) var(--animation-timing-function), opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
+
+    
+}
+.container-menu{
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+.menu-close{
+    position: absolute;    
+    width: 24px;
+    height: 24px;
+    right: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color var(--animation-duration) var(--animation-timing-function);
+}
+.menu-close:hover{
+    background-color: var(--second-active-color);
    
 }
+
+.menu-close:hover .menu-close-icon{
+    fill: var(--standard-white-color);
+    transition: fill var(--animation-duration) var(--animation-timing-function);
+}
+.nav-list-menu {
+   margin-top: 40px;
+   
+}
+.nav-member-menu {
+    list-style-type: none;
+}
+.current-menu{
+    color: var(--active-color);
+}
+.nav-member-menu:not(:last-child){
+    margin-bottom: 40px;
+}
+.contacts-member-menu {
+    list-style-type: none;
+}
+.contacts-member-menu{
+    margin-bottom: 40px;
+}
+.phone-menu{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.10;
+    text-transform: capitalize;
+    color: var(--active-color);
+
+}
+.email-menu{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.social-link-list-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+ }
+ 
+
 /*footer*/
 .footer{
     background: var(--title-text-color);
@@ -262,8 +346,6 @@ nav{
     letter-spacing: 0.02em;
     color: var(--standard-white-color);
     margin-bottom: 16px;
-}
-.input-and-button{
 }
 
 .label-exception{
