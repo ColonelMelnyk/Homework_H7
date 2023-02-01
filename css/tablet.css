@@ -140,6 +140,7 @@
     }
     .button-list{
         margin-bottom: 64px;
+        justify-content: center;
     }
     .image-list{
         justify-content: initial;
