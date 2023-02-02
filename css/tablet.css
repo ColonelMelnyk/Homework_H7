@@ -97,6 +97,10 @@
     letter-spacing: 0.02em;
     margin-bottom: 40px;
     }
+    .modal{
+        width: 408px;
+        min-height: 586px;
+    }
     .important-points-section{
         padding-bottom: 96px;
     }

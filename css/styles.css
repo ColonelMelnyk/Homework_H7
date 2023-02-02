@@ -445,7 +445,7 @@ nav{
     .banner{
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/Bgimage-mob2x.jpg);
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage-mob2.jpg);
     }
   }
 .banner-logo{
@@ -505,8 +505,8 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 576px;
+    width: 392px;
+    min-height: 586px;
     background-color: var(--modal-color);
     box-shadow: var(--modal-shadow);
     border-radius: 4px;

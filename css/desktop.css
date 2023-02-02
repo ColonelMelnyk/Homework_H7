@@ -122,6 +122,9 @@
         font-weight: 600;
         line-height: 1.18;
     }
+    .modal{
+        min-height: 584px;
+    }
     .important-points-section{
         padding-top: 120px;
     
