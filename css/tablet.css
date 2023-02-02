@@ -26,6 +26,7 @@
     .container{
         width: 768px;
     }
+    
     .container-header{
         width: 768px;
         position: relative;
@@ -72,6 +73,9 @@
     .banner{
         max-width: 768px;
         max-height: 436px;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage-tab.jpg);
     }
     .banner{
         padding-bottom: 108px;

@@ -432,8 +432,8 @@ nav{
     padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/Bgimage.jpg);
-    max-width: 428px;
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage-mob.jpg);
+    max-width: 100vw;
     max-height: 432px;
     background-size: cover;
     background-position: center;

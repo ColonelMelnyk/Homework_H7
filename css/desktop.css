@@ -33,6 +33,8 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+    
+
     .container-footer{
         width: 1158px;
         margin-left: auto;
@@ -99,6 +101,9 @@
         max-height: 600px;
         margin-left: auto;
         margin-right: auto;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage.jpg);
     }
     .banner-logo{
         font-size: 56px;
