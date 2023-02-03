@@ -52,17 +52,20 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
 }
 /*container*/
 .container-header{
+    margin: 0 auto;
     width: 100vw;
     padding-left: 16px;
     padding-right: 16px;
 }
 .container{
+    margin: 0 auto;
     width: 100vw;
     padding-right: 15px;
     padding-left: 15px;
     
 }
 .container-footer{
+    margin: 0 auto;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +77,7 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
     padding-top: 24px;
     padding-bottom: 24px;
     box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px rgb(46 47 66 / 8%);
-    
+    margin: 0 auto;
 }
 .header-block{
     display: flex;
@@ -115,14 +118,15 @@ nav{
 .nav-link{
     color: var(--title-text-color);
     text-decoration: none;
-    font-size: 16px;
-    line-height: 0.66;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--title-text-color);
     display: inline-block;
     transition: color var(--animation-duration) var(--animation-timing-function);
-    
+    text-transform: capitalize;
+
 }
 
 .nav-list{
@@ -254,11 +258,12 @@ nav{
 }
 .social-link-list-menu{
     display: flex;
-    justify-content: space-between;
+    gap: 56px;
     align-items: center;
     list-style-type: none;
+    justify-content: center;
  }
- 
+
 
 /*footer*/
 .footer{
@@ -426,6 +431,7 @@ nav{
  /*------------index.html styles-------------*/
 /*banner*/
 .banner{
+    margin: 0 auto;
     background: var(--title-text-color);
     text-align: center;
     padding-top: 112px;
@@ -827,7 +833,6 @@ label{
     
 }
 .teamcards-list > .teamcards-member{
-    margin-top: 72px;
     margin-left: 83px;
     margin-right: 83px;
     margin-bottom: 72px;
