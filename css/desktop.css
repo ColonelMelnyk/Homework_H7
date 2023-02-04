@@ -126,6 +126,7 @@
         line-height: 1.18;
     }
     .modal{
+        width: 408px;
         min-height: 584px;
     }
     .important-points-section{
@@ -237,4 +238,7 @@
     .image-list-member:not(:nth-child(3n+1)) {
         margin-left: 24px;
 }
+    .footer-logo{
+        text-align: initial;
+    }
 }

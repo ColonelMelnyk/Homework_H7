@@ -187,9 +187,11 @@ nav{
 .mob-menu{
     position: fixed;
     top: 0; 
+    left: 0;
     background-color: var(--standard-white-color);
     transition: translate var(--animation-duration) var(--animation-timing-function), opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
     z-index: 1;
+    width: 100vw;
     
 }
 .container-menu{
@@ -203,7 +205,7 @@ nav{
     transition: transform var(--animation-duration) var(--animation-timing-function), opacity var(--animation-duration) var(--animation-timing-function);
 }
 .menu-close{
-    position: absolute;    
+    position: fixed;    
     width: 24px;
     height: 24px;
     right: 40px;
@@ -511,7 +513,7 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 392px;
+    min-width: 392px;
     min-height: 586px;
     background-color: var(--modal-color);
     box-shadow: var(--modal-shadow);
@@ -767,7 +769,6 @@ label{
 }
 /*activities index.html*/
 .activities{
-    padding-top: 120px;
     padding-bottom: 120px;
     display: none;
 }
